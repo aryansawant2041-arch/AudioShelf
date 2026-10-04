@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark"
+    android:padding="20dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="0dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/detailCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/surface_light"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"/>
+
+    <TextView
+        android:id="@+id/detailAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author · Chapters · Duration"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/detailGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre: —"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"/>
+
+    <TextView
+        android:id="@+id/detailLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language: —"
+        android:textSize="13sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save to Shelf"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_button_primary"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove from shelf"
+        android:textColor="@color/text_primary"
+        android:background="@drawable/bg_button_secondary"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/listenButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listen now"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_button_primary"/>
+
+</LinearLayout>
